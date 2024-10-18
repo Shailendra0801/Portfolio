@@ -30,8 +30,8 @@ body {
 }
 
 .headline-1 {
-    @apply text-5xl leading-tight font-semibold lg:text-
-    [55px] lg:leading[1.15] 
+    @apply text-5xl leading-tight font-semibold lg:text-[55px] 
+    lg:leading-tight-custom;
 }
 
 .headline-2 {
@@ -46,8 +46,8 @@ body {
 /*
  * UTILITIES
 */
-.material--symbols-rounded {
-    @apply w-[lem] h-[lem] overflow-hidden;
+.material-symbols-rounded {
+    @apply w-[1em] h-[1em] overflow-hidden;
     font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0,
     "opsz" 24;
 }
@@ -68,6 +68,10 @@ body {
     @apply pt-20 lg:pt-32
 }
 
+.reveal-up {
+    @apply translate-y-20 opacity-0
+}
+
 
 /*
  * COMPONENTS
@@ -78,7 +82,7 @@ body {
 .menu-btn {
     @apply w-10 h-10 grid place-items-center bg-zinc-50/10
     rounded-xl ring-inset ring-1 ring-zinc-50/[0.02] backdrop-blur-2xl hover:bg-zinc-50/15 
-    transition-[transform, background-color] active:scale-95;
+    transition-transform transition-colors active:scale-95;
 }
 
 /* Navbar */
@@ -86,9 +90,10 @@ body {
 .navbar {
     @apply absolute top-full mt-2 right-0 min-w-40 p-2
     bg-zinc-50/10 rounded-2xl ring-inset ring-1 ring-zinc-50/5
-    scale-90 isolate blur-sm opacity-0 invisibletransition-
-    [opacity, transform, filter] md:static md:flex md:items-center md:mt-0
+    scale-90 isolate blur-sm opacity-0 invisible transition-opacity transition-transform 
+    md:static md:flex md:items-center md:mt-0
     md:opacity-100 md:blur-0 md:visible md:scale-100 backdrop-blur-2xl;
+    transition: filter 0.3s ease;
 }
 
 .navbar.active {
@@ -96,7 +101,7 @@ body {
 }
 
 .nav-link {
-    @apply grid items-center h-9 px-4text-sm font-medium tracking-wide
+    @apply grid items-center h-9 px-4 text-sm font-medium tracking-wide
     text-zinc-50/50 hover:text-zinc-50 transition-colors;
 }
 
@@ -106,7 +111,8 @@ body {
 
 .navbar .active-box {
     @apply absolute bg-zinc-50
-    rounded-lg -z-10 transition-[top, left] duration-500;
+    rounded-lg -z-10 duration-500;
+    transition: top 0.5s ease, left 0.5s ease;
 }
 
 /* Button */
@@ -118,7 +124,7 @@ body {
 }
 
 .btn-secondary {
-    @apply bg-zinc-50 text-zinc-900 active:bg-zinz-50/80 
+    @apply bg-zinc-50 text-zinc-900 active:bg-zinc-50/80 
 }
 
 .btn .material-symbols-rounded {
@@ -137,4 +143,21 @@ body {
 .btn-outline {
     @apply h-11 bg-zinc-800 hover:bg-zinc-700 
     active:bg-zinc-800;
+}
+
+
+/* Tect Field */
+.label {
+    @apply block text-zinc-200 text-sm font-normal mb-2;
+}
+
+.text-field {
+    @apply block outline-none w-full px-3 py-3 text-sm
+    bg-zinc-800 rounded-xl ring-1 ring-inset ring-transparent
+    transition-shadow hover:ring-zinc-50/5 focus:ring-sky-400
+    focus:ring-2;
+}
+
+.text-field::placeholder {
+    @apply text-zinc-400
 }

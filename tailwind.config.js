@@ -1,17 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 
 import tailwindScrollbar from 'tailwind-scrollbar';
+import typography from '@tailwindcss/typography';
 
-const tailwindConfig = {
-  content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
+
+
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-      },
+      lineHeight: {
+        'tight-custom': '1.15',
+      }
     },
   },
-  plugins: [tailwindScrollbar],
-};
-
-export default tailwindConfig;
+  plugins: [tailwindScrollbar, typography],
+}
