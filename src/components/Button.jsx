@@ -38,7 +38,7 @@ const ButtonPrimary = ({
     }
     else{
         return (
-            <button className={"btn btn-primary" + classes}>
+            <button className={"btn btn-primary ${classes || ''}"}>
                 {label}
 
                 {icon ? 

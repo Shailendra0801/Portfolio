@@ -41,7 +41,7 @@ const ReviewCard = ({
         </div>
         
 
-        <p className="txt-zinc-400 mb-8">
+        <p className="text-zinc-400 mb-8">
             {content}
         </p>
         

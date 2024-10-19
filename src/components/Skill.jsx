@@ -56,7 +56,7 @@ const skillItem = [
 
 const Skill = () => {
   return (
-    <section className="">
+    <section className="section">
         <div className="container">
 
             <h2 className="headline-2 reveal-up">
@@ -69,8 +69,7 @@ const Skill = () => {
                 websites & applications.
             </p>
 
-            <div className="grid gap-3 grid-cols-[repeat
-            (auto-fill, _minmax(250px, _1fr))]">
+            <div className="grid gap-3 grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))]">
                 {
                     skillItem.map(({imgSrc, label, desc}, key) => (
                         <SkillCard 

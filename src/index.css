@@ -106,7 +106,7 @@ body {
 }
 
 .nav-link.active {
-    @apply text-zinc-900 duration-500;
+    @apply text-zinc-900 transition-all duration-500;
 }
 
 .navbar .active-box {
@@ -161,3 +161,13 @@ body {
 .text-field::placeholder {
     @apply text-zinc-400
 }
+
+
+.scrub-slide {
+    white-space: nowrap; /* Prevents items from wrapping */
+  }
+  
+  .review-card {
+    min-width: 280px; /* Ensures each card has a minimum width */
+    max-width: 350px; /* Width for each card to ensure proper scrolling */
+  }

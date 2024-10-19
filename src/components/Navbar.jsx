@@ -27,22 +27,27 @@ const Navbar = ({navOpen})  => {
 
     }
 
-    useEffect(initActiveBox, [])
-    window.addEventListener('resize', initActiveBox);
+    useEffect(() => {
+      initActiveBox();
+      window.addEventListener('resize', initActiveBox);
+  
+      // Clean up event listener on unmount
+      return () => window.removeEventListener('resize', initActiveBox);
+    }, []);
 
     const activeCurrentLink = (event) => {
         lastActiveLink.current?.classList.remove('active');
-        event.target.classList.add('activ');
+        event.target.classList.add('active');
         lastActiveLink.current = event.target;
 
 
-        activeBox.current.style.top = event.target.current.offsetTop
+        activeBox.current.style.top = event.target.offsetTop
         +  "px";
-        activeBox.current.style.left = event.target.current.offsetLeft
+        activeBox.current.style.left = event.target.offsetLeft
         +  "px";
-        activeBox.current.style.width = event.target.current.offsetWidth
+        activeBox.current.style.width = event.target.offsetWidth
         +  "px";
-        activeBox.current.style.height = event.target.current.offsetHeight
+        activeBox.current.style.height = event.target.offsetHeight
         +  "px";
     }
 
