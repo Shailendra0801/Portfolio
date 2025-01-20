@@ -1,0 +1,74 @@
+/* Add your CSS styles for the Footer component here */
+.section {
+    padding: 2rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.headline-1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.text-zinc-400 {
+    color: #9CA3AF;
+}
+
+.text-zinc-500 {
+    color: #6B7280;
+}
+
+.text-zinc-200 {
+    color: #E5E7EB;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.grid {
+    display: grid;
+}
+
+.gap-4 {
+    gap: 1rem;
+}
+
+.mb-10 {
+    margin-bottom: 2.5rem;
+}
+
+.mb-8 {
+    margin-bottom: 2rem;
+}
+
+.reveal-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: reveal-up 0.5s forwards;
+}
+
+@keyframes reveal-up {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

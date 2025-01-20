@@ -3,12 +3,10 @@
  * @license Apache-2.0
 */
 
-
 /**
  * Components
  */
-import SkillCard from "./skillCard";
-
+import SkillCard from "../SkillCard/SkillCard";
 
 const skillItem = [
     {
@@ -51,8 +49,7 @@ const skillItem = [
       label: 'TailwindCSS',
       desc: 'User Interface'
     },
-  ];
-
+];
 
 const Skill = () => {
   return (

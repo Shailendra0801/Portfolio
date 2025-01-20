@@ -1,0 +1,31 @@
+/* Add your CSS styles for the Review component here */
+.section {
+    padding: 2rem 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.headline-2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.scrub-slide {
+    display: flex;
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+}
+
+.items-stretch {
+    align-items: stretch;
+}
+
+.gap-3 {
+    gap: 0.75rem;
+}

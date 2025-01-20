@@ -3,7 +3,6 @@
  * @license Apache-2.0
 */
 
-
 const aboutItems = [
     {
       label: 'Project done',

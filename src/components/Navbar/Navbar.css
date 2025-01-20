@@ -1,0 +1,25 @@
+/* Add your CSS styles for the Navbar component here */
+.navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.nav-link {
+    padding: 1rem;
+    color: #9CA3AF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-link.active {
+    color: #FFFFFF;
+}
+
+.active-box {
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    background-color: #FFFFFF;
+    transition: all 0.3s;
+}

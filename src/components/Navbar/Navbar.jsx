@@ -3,13 +3,11 @@
  * @license Apache-2.0
 */
 
-
 /**
  * Node Modules
  */
 import { useRef, useEffect } from "react";
 import PropTypes from "prop-types";
-
 
 const Navbar = ({navOpen})  => {
 
@@ -24,7 +22,6 @@ const Navbar = ({navOpen})  => {
         +  "px";
         activeBox.current.style.height = lastActiveLink.current.offsetHeight
         +  "px";
-
     }
 
     useEffect(() => {
@@ -39,7 +36,6 @@ const Navbar = ({navOpen})  => {
         lastActiveLink.current?.classList.remove('active');
         event.target.classList.add('active');
         lastActiveLink.current = event.target;
-
 
         activeBox.current.style.top = event.target.offsetTop
         +  "px";
@@ -101,7 +97,6 @@ const Navbar = ({navOpen})  => {
                 ref={activeBox}
             ></div>
         </nav>
-
     )
 }
 

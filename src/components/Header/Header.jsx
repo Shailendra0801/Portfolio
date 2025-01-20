@@ -3,19 +3,15 @@
  * @license Apache-2.0
 */
 
-
-
 /**
  * Node Modules
  */
 import { useState } from "react";
 
-
 /**
  * Components
  */
-import Navbar from "./Navbar";
-
+import Navbar from "../Navbar/Navbar";
 
 const Header = () => {
 

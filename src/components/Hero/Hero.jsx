@@ -6,8 +6,7 @@
 /**
  * Components
  */
-import { ButtonPrimary, ButtonOutline } from "./Button";
-
+import { ButtonPrimary, ButtonOutline } from "../Button/Button";
 
 const Hero = () => {
 
@@ -57,7 +56,6 @@ const Hero = () => {
                             <ButtonOutline 
                                 href="#about"
                                 label="Scroll Down"
-                                // icom="arrow-down"
                                 icon="arrow_downward"
                             />
                         </div>
@@ -76,11 +74,7 @@ const Hero = () => {
                         />
                     </figure>
                 </div>
-                
-
             </div>
-
-
         </section>
   )
 }

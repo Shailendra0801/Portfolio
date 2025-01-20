@@ -116,4 +116,4 @@ ButtonOutline.propTypes = {
 export {
     ButtonPrimary,
     ButtonOutline
-}
+};

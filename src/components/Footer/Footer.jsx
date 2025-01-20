@@ -6,8 +6,7 @@
 /**
  * Components
  */
-import {ButtonPrimary} from "./Button"
-
+import { ButtonPrimary } from "../Button/Button";
 
 const sitemap = [
   {
@@ -54,7 +53,6 @@ const socials = [
     href: 'https://codepen.io/codewithsadee'
   }
 ];
-
 
 const Footer = () => {
 

@@ -3,12 +3,10 @@
  * @license Apache-2.0
 */
 
-
 /**
  * Node Modules
  */
 import PropTypes from "prop-types";
-
 
 const ProjectCard = ({
     imgSrc,

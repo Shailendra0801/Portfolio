@@ -6,33 +6,29 @@
 /**
  * Node modules
  */
-import {ReactLenis} from "lenis/react";
+import { ReactLenis } from "lenis/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from '@gsap/react';
-
 
 /**
  * Register gsap plugins
  */
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
-
 /**
  * Components
  */
-import Header from "./components/header";
-import Hero from "./components/hero";
-import About from "./components/About";
-import Skill from "./components/Skill";
-import Work from "./components/Work";
-import Review from "./components/Review";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-
+import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero";
+import About from "./components/About/About";
+import Skill from "./components/Skill/Skill";
+import Work from "./components/Work/Work";
+import Review from "./components/Review/Review";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
-
   useGSAP(() => {
     const elements = gsap.utils.toArray('.reveal-up');
 
@@ -40,7 +36,7 @@ const App = () => {
       gsap.to(element, {
         scrollTrigger: {
           trigger: element,
-          start: '-200 bottom',
+          start: 'top bottom',
           end:  'bottom 80%',
           scrub: true
         },
@@ -59,7 +55,7 @@ const App = () => {
         <Hero />
         <About />
         <Skill />
-        <Work  />
+        <Work />
         <Review />
         <Contact />
       </main>

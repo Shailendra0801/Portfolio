@@ -3,7 +3,6 @@
  * @license Apache-2.0
 */
 
-
 /**
  * Node modules
  */
@@ -11,18 +10,15 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from '@gsap/react';
 
-
 /**
  * Register gsap plugins
  */
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
-
 /**
- * Compopnents
+ * Components
  */
-import ReviewCard from "./ReviewCard";
-
+import ReviewCard from "../ReviewCard/ReviewCard";
 
 const reviews = [
     {
@@ -61,7 +57,7 @@ const reviews = [
       imgSrc: '/images/people-6.jpg',
       company: 'Skyline Digital'
     }
-  ];
+];
 
 const Review = () => {
 
@@ -69,8 +65,8 @@ const Review = () => {
     gsap.to('.scrub-slide', {
       scrollTrigger: {
         trigger: '.scrub-slide',
-        start: '-200% 80%',
-        end: '400% 80%',
+        start: 'top center',
+        end: 'bottom center',
         scrub: true
       },
       x: '-1000'
@@ -107,4 +103,4 @@ const Review = () => {
   )
 }
 
-export default  Review;
+export default Review;

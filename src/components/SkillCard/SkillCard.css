@@ -1,0 +1,44 @@
+/* Add your CSS styles for the SkillCard component here */
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.gap-3 {
+    gap: 0.75rem;
+}
+
+.ring-2 {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+}
+
+.ring-inset {
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.1);
+}
+
+.rounded-2xl {
+    border-radius: 1rem;
+}
+
+.p-3 {
+    padding: 0.75rem;
+}
+
+.hover\:bg-zinc-800:hover {
+    background-color: #1F2937;
+}
+
+.transition-colors {
+    transition: background-color 0.3s;
+}
+
+.group {
+    position: relative;
+}
+
+.group-hover\:bg-zinc-900:hover {
+    background-color: #111827;
+}
